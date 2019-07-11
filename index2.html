@@ -158,17 +158,17 @@
   var circley = 10;
 
   var svg = document.createElementNS("http://www.w3.org/2000/svg", 'svg');
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 2265; i++) {
     circlex = circlex + 1;
     circley = circley + 1;
 
     var circle = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
-    circle.setAttribute("cx", circlex);
-    circle.setAttribute("cy", circley);
+    circle.setAttribute("cx", "10");
+    circle.setAttribute("cy", "10");
     circle.setAttribute("r", "40");
     circle.setAttribute("stroke", "green");
     circle.setAttribute("strokeWidth", 4);
-    circle.setAttribute("fill", "yellow");
+    circle.setAttribute("fill", "red");
     svg.appendChild(circle);
   };
   document.body.appendChild(svg);
