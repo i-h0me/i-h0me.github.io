@@ -1,0 +1,244 @@
+<html>
+<head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8db2a8df-270b-47e9-bd71-bb52304a8a9b" type="text/javascript" async></script>
+    <script id="CookieDeclaration" src="https://consent.cookiebot.com/8db2a8df-270b-47e9-bd71-bb52304a8a9b/cd.js" type="text/javascript" async></script>
+  
+    <title>
+        hello world
+    </title>
+    <script>
+        window.onload = function() {
+        document.getElementById("Save").onclick = function fun() {
+        var x = document.forms["myForm"]["ip_address"].value;
+        var Url = "http://localhost:8080/connect.php?name="+ x +"&color3=dud23";
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', Url, true);
+        xhr.send(x);
+        xhr.onreadystatechange = processRequest;
+        function processRequest(e) {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+        // alert(xhr.responseText.headers.Host);
+        var response1 = JSON.parse(xhr.responseText);
+        document.getElementById("origin").innerHTML = response1.origin;
+        document.getElementById("url").innerHTML = response1.url;
+        document.getElementById("data").innerHTML = response1.data;
+        }
+        }
+        xhr.withCredentials = true;
+        }
+        }
+       </script>
+</head>
+<body>
+    <div style="height:1000px;width:1200px;margin-top:-120px"> 
+        <img src="img/HousePlan.svg" style='height: 100%; width: 100%; object-fit: contain'>
+    
+        <svg  id="bedroom" style="height:30px;width:30px;position: absolute; top:130px; left:527px;" class="fancy-bulb" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 275.3 413.3" enable-background="new 0 0 275.3 413.3" xml:space="preserve">
+            <g>
+                <path id="bedroombulb" fill="#FFDB55" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8
+                    c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+            </g>
+            <g id="outline">
+                <path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M168.5,375.5h-61.7c-8.9,0-16-7.2-16-16
+                    v-55.8h93.8v55.8C184.6,368.3,177.4,375.5,168.5,375.5z"/>
+                <path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M151.2,401.5h-27.1c-3.9,0-7-3.2-7-7v-19
+                    h41.1v19C158.2,398.4,155.1,401.5,151.2,401.5z"/>
+                <line fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" x1="184.6" y1="339.6" x2="90.8" y2="339.6"/>
+                <path fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4
+                    c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+            </g>
+            <g id="highlight">
+                <path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round" stroke-miterlimit="10" d="M207.1,89.5
+                    c-12.3-16.1-28.4-29.1-46.9-37.8"/>
+                <path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round" stroke-miterlimit="10" d="M225,121.4
+                    c-0.8-2.2-1.8-4.4-2.7-6.5"/>
+            </g>
+        </svg>
+    
+        <svg  id="children" style="height:30px;width:30px;position: absolute; top:80px; left:120px;" class="fancy-bulb" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 275.3 413.3" enable-background="new 0 0 275.3 413.3" xml:space="preserve">
+            <g>
+                <path id="childrenroombulb" fill="#FFDB55" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8
+                    c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+            </g>
+            <g id="outline">
+                <path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M168.5,375.5h-61.7c-8.9,0-16-7.2-16-16
+                    v-55.8h93.8v55.8C184.6,368.3,177.4,375.5,168.5,375.5z"/>
+                <path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M151.2,401.5h-27.1c-3.9,0-7-3.2-7-7v-19
+                    h41.1v19C158.2,398.4,155.1,401.5,151.2,401.5z"/>
+                <line fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" x1="184.6" y1="339.6" x2="90.8" y2="339.6"/>
+                <path fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4
+                    c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+            </g>
+            <g id="highlight">
+                <path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round" stroke-miterlimit="10" d="M207.1,89.5
+                    c-12.3-16.1-28.4-29.1-46.9-37.8"/>
+                <path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round" stroke-miterlimit="10" d="M225,121.4
+                    c-0.8-2.2-1.8-4.4-2.7-6.5"/>
+            </g>
+        </svg>
+    
+        <svg  id="livingrm" style="height:30px;width:30px;position: absolute; top:160px; left:180px;" class="fancy-bulb" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 275.3 413.3" enable-background="new 0 0 275.3 413.3" xml:space="preserve">
+            <g>
+                <path id="livingroombulb" fill="#FFDB55" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8
+                    c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+            </g>
+            <g id="outline">
+                <path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M168.5,375.5h-61.7c-8.9,0-16-7.2-16-16
+                    v-55.8h93.8v55.8C184.6,368.3,177.4,375.5,168.5,375.5z"/>
+                <path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M151.2,401.5h-27.1c-3.9,0-7-3.2-7-7v-19
+                    h41.1v19C158.2,398.4,155.1,401.5,151.2,401.5z"/>
+                <line fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" x1="184.6" y1="339.6" x2="90.8" y2="339.6"/>
+                <path fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4
+                    c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+            </g>
+            <g id="highlight">
+                <path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round" stroke-miterlimit="10" d="M207.1,89.5
+                    c-12.3-16.1-28.4-29.1-46.9-37.8"/>
+                <path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round" stroke-miterlimit="10" d="M225,121.4
+                    c-0.8-2.2-1.8-4.4-2.7-6.5"/>
+            </g>
+        </svg>
+    
+        <svg  id="kitchen" style="height:30px;width:30px;position: absolute; top:320px; left:170px;" class="fancy-bulb" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 275.3 413.3" enable-background="new 0 0 275.3 413.3" xml:space="preserve">
+            <g>
+                <path id="kitchenbulb" fill="#FFDB55" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8
+                    c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+            </g>
+            <g id="outline">
+                <path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M168.5,375.5h-61.7c-8.9,0-16-7.2-16-16
+                    v-55.8h93.8v55.8C184.6,368.3,177.4,375.5,168.5,375.5z"/>
+                <path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M151.2,401.5h-27.1c-3.9,0-7-3.2-7-7v-19
+                    h41.1v19C158.2,398.4,155.1,401.5,151.2,401.5z"/>
+                <line fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" x1="184.6" y1="339.6" x2="90.8" y2="339.6"/>
+                <path fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4
+                    c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+            </g>
+            <g id="highlight">
+                <path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round" stroke-miterlimit="10" d="M207.1,89.5
+                    c-12.3-16.1-28.4-29.1-46.9-37.8"/>
+                <path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round" stroke-miterlimit="10" d="M225,121.4
+                    c-0.8-2.2-1.8-4.4-2.7-6.5"/>
+            </g>
+        </svg>
+    
+        <svg  id="portico" style="height:30px;width:30px;position: absolute; top:305px; left:400px;" class="fancy-bulb" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 275.3 413.3" enable-background="new 0 0 275.3 413.3" xml:space="preserve">
+            <g>
+                <path id="porticobulb" fill="#FFDB55" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8
+                    c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+            </g>
+            <g id="outline">
+                <path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M168.5,375.5h-61.7c-8.9,0-16-7.2-16-16
+                    v-55.8h93.8v55.8C184.6,368.3,177.4,375.5,168.5,375.5z"/>
+                <path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M151.2,401.5h-27.1c-3.9,0-7-3.2-7-7v-19
+                    h41.1v19C158.2,398.4,155.1,401.5,151.2,401.5z"/>
+                <line fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" x1="184.6" y1="339.6" x2="90.8" y2="339.6"/>
+                <path fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4
+                    c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+            </g>
+            <g id="highlight">
+                <path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round" stroke-miterlimit="10" d="M207.1,89.5
+                    c-12.3-16.1-28.4-29.1-46.9-37.8"/>
+                <path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round" stroke-miterlimit="10" d="M225,121.4
+                    c-0.8-2.2-1.8-4.4-2.7-6.5"/>
+            </g>
+        </svg>
+    </div>
+  <div style="margin-top: -60%">
+    <svg height="20" width="20">
+        <circle id="1" style="opacity: 0.30"  cx="10" onmouseover="callsvg(this.id)" onclick="callred(this.id)" style="opacity:30" cy="10" r="5" stroke="black" stroke-width="1" fill="red" />
+    </svg>
+  
+  
+              <svg height="20" width="20" style="opacity: 0.30">
+                <circle id="2265" style="opacity: 0.30"  style="opacity: 0.30"  cx="10" onmouseover="callsvg(this.id)" onclick="callred(this.id)" cy="10" r="5" stroke="black" stroke-width="1" fill="red" />
+              </svg></div>
+
+             <div> <center>
+                  Javascript Post Request Test
+                 <br><br> 
+                  <form name="myForm">
+                  <input type="text" name="ip_address"/>
+                  <input type="button" id="Save" onclick="f1()" value="test"/>
+                 </form>
+                  <br><br> 
+                  <table border="1">
+                  <tr><td>data :</td><td id="data"></td></tr>
+                  <tr><td>origin :</td><td id="origin"></td></tr>
+                  <tr><td>url :</td><td id="url"></td></tr>
+                  </table>
+                  </center></div>
+      
+              <script type="text/javascript">
+                function callred(clicked_id)
+                {
+                  document.getElementById(clicked_id).setAttribute('fill','blue');
+                  
+                  document.getElementById(clicked_id).setAttribute('style','opacity: 1.00');
+                  var x1 = document.getElementById(clicked_id).getAttribute('id');
+                  var Url1 = "http://localhost:8080/connect.php?name="+ x1 +"&color3=dud23";
+                  var xhr1 = new XMLHttpRequest();
+                  xhr1.open('GET', Url1, true);
+                  xhr1.send(x1);
+                  xhr1.withCredentials = true;
+                  /*alert(clicked_id);*/
+                }
+                </script>
+      <script>
+        
+      /*function callred(this_id){
+          document.getElementById(this.id).setAttribute('fill','blue')
+      }*/
+      function callsvg(clicked_id){
+          document.getElementById(clicked_id).setAttribute('fill','yellow')
+      }
+      </script>
+       
+
+
+       <div class="container">
+          <div id="no-script"class="bg-info">
+            This application needs JavaScript enabled in your browser!
+          </div>
+          <div id="id_contextdump"></div>
+    
+          <h1>My BOT</h1>
+          <div id=id_botchathistory>
+        </div>
+        
+        <div>
+            <form>
+                <label for="id_chattext">Your Input: </label>
+                <input type="text" name="chattext" id="id_chattext">
+                <br/><br/>
+            </form>
+            <button onclick="javascript:onChatClick()" id="id_enter">Send</button>
+        </div>
+        </div>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <script>{{{payload.script}}}</script>
+   
+       <div id="controls">
+        <button id="recordButton">Record</button>
+        <button id="pauseButton" disabled>Pause</button>
+        <button id="stopButton" disabled>Stop</button>
+       </div>
+       <div id="formats" style="opacity: 0.00">Format: start recording to see sample rate</div>
+       <h3>Recordings</h3>
+       <ol id="recordingsList"></ol>
+   
+       <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+       <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+       <script src="app.js"></script>
+       
+     
+      
+</body>
+</html>
