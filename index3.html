@@ -2,7 +2,15 @@
 <head>
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8db2a8df-270b-47e9-bd71-bb52304a8a9b" type="text/javascript" async></script>
     <script id="CookieDeclaration" src="https://consent.cookiebot.com/8db2a8df-270b-47e9-bd71-bb52304a8a9b/cd.js" type="text/javascript" async></script>
-  
+  <style>
+    
+    #img {
+  position: absolute;
+  left: -20%;
+  top: -5%;
+  z-index: -1;
+}
+    </style>
     <title>
         hello world
     </title>
@@ -30,7 +38,7 @@
        </script>
 </head>
 <body>
-    <div id="myDIV"></div>
+      <div id="myDIV"></div>
     <div style="height:1000px;width:1200px;margin-top:-120px"> 
          <script type="text/javascript">//<![CDATA[
 
@@ -47,7 +55,7 @@
       var img = new Image();
       img.setAttribute = ("src","img/HousePlan.svg");
     img.setAttribute = ("style","height: 100%; width: 100%; object-fit: contain;margin-top: -1000PX");
-  for (var i = 0; i < 2265; i++) {
+  for (var i = 0; i < 3265; i++) {
     circlex = circlex + 1;
     circley = circley + 1;
       var a = document.getElementById("myDIV");
@@ -58,7 +66,7 @@
     svg.setAttribute("width", "20");
     svg.setAttribute("style", "/*opacity: 0.30;*/z-index: 5000;");
     var circle = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
-    circle.setAttribute("id", i);
+    circle.setAttribute("id", "t"+[i]);
     circle.setAttribute("style", "opacity: 0.30");
     circle.setAttribute("onmouseover", "callsvg(this.id)");
     circle.setAttribute("onclick", "callred(this.id)");
@@ -79,9 +87,8 @@ document.getElementById("myDIV");
 
   //]]></script>
     </div>
-    <div id="myDIV" style="z-index: 4000">
-    
-     <img src="img/HousePlan.svg" style='height: 100%; width: 100%; object-fit: contain;margin-top: -1000PX'>
+    <div style="height:1000px;width:1200px;margin-top:-1120px"> 
+        <img id="img" src="img/HousePlan.svg" style='height: 100%; width: 100%; object-fit: contain'>
     
         <svg  id="bedroom" style="height:30px;width:30px;position: absolute; top:130px; left:527px;" class="fancy-bulb" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 275.3 413.3" enable-background="new 0 0 275.3 413.3" xml:space="preserve">
@@ -197,12 +204,8 @@ document.getElementById("myDIV");
                     c-0.8-2.2-1.8-4.4-2.7-6.5"/>
             </g>
         </svg>
-        
     </div>
-    <div style="height:1000px;width:1200px;margin-top:-1520px;"> 
-       
-    </div>
-  
+  <div id="mydiv" style="margin-top: -60%"></div>
 
              <div> <center>
                   Javascript Post Request Test
@@ -223,6 +226,7 @@ document.getElementById("myDIV");
                 function callred(clicked_id)
                 {
                   document.getElementById(clicked_id).setAttribute('fill','blue');
+                  
                   document.getElementById(clicked_id).setAttribute('style','opacity: 1.00');
                   var x1 = document.getElementById(clicked_id).getAttribute('id');
                   var Url1 = "http://localhost:8080/connect.php?name="+ x1 +"&color3=dud23";
