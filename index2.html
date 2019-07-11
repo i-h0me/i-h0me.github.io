@@ -157,11 +157,11 @@
   var circlex = 10;
   var circley = 10;
 
-  var svg = document.createElementNS("http://www.w3.org/2000/svg", 'svg');
   for (var i = 0; i < 2265; i++) {
     circlex = circlex + 1;
     circley = circley + 1;
-
+ var svg = document.createElementNS("http://www.w3.org/2000/svg", 'svg');
+ 
     var circle = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
     circle.setAttribute("cx", "10");
     circle.setAttribute("cy", "10");
@@ -179,8 +179,16 @@
   //]]></script>
       
       test 1
+      <script>
+      var element = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+element.setAttributeNS(null, 'x', 5);
+element.setAttributeNS(null, 'y', 15);
+var txt = document.createTextNode("Hello World");
+element.appendChild(txt);
+svg.appendChild(element);
       
       
+      </script>
       <script type="text/javascript">
 
     var circlex = 50; 
