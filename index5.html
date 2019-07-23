@@ -1,0 +1,143 @@
+<html>
+<head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8db2a8df-270b-47e9-bd71-bb52304a8a9b" type="text/javascript" async></script>
+    <script id="CookieDeclaration" src="https://consent.cookiebot.com/8db2a8df-270b-47e9-bd71-bb52304a8a9b/cd.js" type="text/javascript" async></script>
+  <style>
+    
+    #img {
+  position: absolute;
+  left: -20%;
+  top: -5%;
+  z-index: -1;
+}
+    </style>
+    <title>
+        hello world
+    </title>
+
+</head>
+<body>
+      <div id="myDIV"></div>
+         <script type="text/javascript">//<![CDATA[
+
+           
+    window.onload=function checkValue(value,arr){
+        
+        var myInit = { method: 'GET',
+                       headers: {
+                           'Content-Type': 'application/json'
+                       },
+                      mode: 'cors',
+                      cache: 'default' };
+      let myRequest = new Request("./external.json", myInit);
+
+        
+fetch(myRequest)
+        .then(function(resp) {
+            return resp.json();
+        })
+        .then(function(data) {
+           // console.log(data.off);
+      //      var array11 = data.off
+        });
+        
+  var circlex = 10;
+  var circley = 10;
+        
+        var img = new Image();
+        var targetArray, func;
+        
+let array = [1, 2, 3, 4, 1120, 20, 45, 56, 90, 91, 110, 150, 2000, 2001];
+        
+         img.setAttribute = ("src","img/HousePlan.svg");
+    img.setAttribute = ("style","height: 100%; width: 100%; object-fit: contain;margin-top: -1000PX");
+          for (s = 0; s < array.length; s++){ 
+              
+              
+    }
+      
+  for (var i = 0; i < 3265; i++) {
+     
+  
+      array.forEach(output)
+      
+      function output(item, index, array){
+          
+          if (item ==[i]) {
+          circle.setAttribute("style", "opacity: 0");
+              
+    circle.setAttribute("onmouseover", "callsvg1(this.id)");
+    circle.setAttribute("onclick", "callred1(this.id)");
+              console.log(item, index);
+              
+        
+    }   
+      };
+      var a = document.getElementById("myDIV");
+      var svgDoc = a.contentDocument;
+     //  var svg1 = svgDoc.createElementNS("http://www.w3.org/2000/svg", 'svg');
+ var svg = document.createElementNS("http://www.w3.org/2000/svg", 'svg');
+    svg.setAttribute("height", "20");
+    svg.setAttribute("width", "20");
+    svg.setAttribute("style", "/*opacity: 0.30;*/z-index: 5000;");
+    var circle = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
+    circle.setAttribute("id", "t"+[i]);
+      var yest1 = circle.setAttribute("id", "t"+[i]);
+    circle.setAttribute("style", "opacity: 0.30");
+    circle.setAttribute("onmouseover", "callsvg(this.id)");
+    circle.setAttribute("onclick", "callred(this.id)");
+    circle.setAttribute("cx", "10");
+    circle.setAttribute("cy", "10");
+    circle.setAttribute("r", "5");
+    circle.setAttribute("stroke", "black");
+    circle.setAttribute("strokeWidth", 4);
+    circle.setAttribute("fill", "red");
+    svg.appendChild(circle);
+     document.getElementById("myDIV").appendChild(svg);
+       document.getElementById("myDIV").appendChild(img);
+  };
+
+document.getElementById("myDIV");
+       
+    }
+
+  //]]></script>
+ 
+            
+      
+              <script type="text/javascript">
+                function callred(clicked_id)
+                {
+                  document.getElementById(clicked_id).setAttribute('fill','blue');
+                  
+                  document.getElementById(clicked_id).setAttribute('style','opacity: 1.00');
+                  var x1 = document.getElementById(clicked_id).getAttribute('id');
+                  var Url1 = "http://localhost:8080/connect.php?name="+ x1 +"&color3=dud23";
+                  var xhr1 = new XMLHttpRequest();
+                  xhr1.open('GET', Url1, true);
+                  xhr1.send(x1);
+                  xhr1.withCredentials = true;
+                  /*alert(clicked_id);*/
+                }
+                </script>
+      <script>
+        
+      /*function callred(this_id){
+          document.getElementById(this.id).setAttribute('fill','blue')
+      }*/
+      function callsvg(clicked_id){
+          document.getElementById(clicked_id).setAttribute('fill','yellow')
+      }
+      </script>
+       
+
+
+      
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       
+     
+      
+</body>
+</html>
